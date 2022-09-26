@@ -12,6 +12,19 @@ clear | cls | clear-host
 mkdir dirname | mkdir dirname | md dirname
 man | help | help
 
+---
+
+- Powershell equivalent of tail command:
+```
+get-content filenamehere -tail 10
+```
+
+- Powershell equivalent of grep command
+```
+Get-Content .\doc.txt | Select-String -Pattern (Get-Content .\regex.txt)
+```
+
+---
 
 
 - Reference: 
