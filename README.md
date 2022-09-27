@@ -14,18 +14,26 @@ man | help | help
 
 ---
 
-- Powershell equivalent of tail command:
+- Powershell equivalent of `tail` command:
 ```
 get-content filenamehere -tail 10
 ```
 
-- Powershell equivalent of grep command
+- Powershell equivalent of `grep` command
 ```
 Get-Content .\doc.txt | Select-String -Pattern (Get-Content .\regex.txt)
 ```
 
+- Powershell equivalent of `grep -r` command
+```
+dir -recurse | Select-String -pattern [SEARCH_PATTERN]
+```
 ---
 
+- Powershell equivalent of `wc -l` command
+```
+measure
+```
 
 - Reference: 
 ```
