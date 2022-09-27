@@ -24,16 +24,22 @@ get-content filenamehere -tail 10
 Get-Content .\doc.txt | Select-String -Pattern (Get-Content .\regex.txt)
 ```
 
-- Powershell equivalent of `grep -r` command
+- Powershell equivalent of `grep -rnw` command
 ```
 dir -recurse | Select-String -pattern [SEARCH_PATTERN]
 ```
----
 
 - Powershell equivalent of `wc -l` command
 ```
 measure
 ```
+
+- Powershell equivalent of `awk -F` command
+```
+Get-Content .\file.txt | ForEach-Object { $_.split(":")[0] }
+```
+
+---
 
 - Reference: 
 ```
